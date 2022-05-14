@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tease Brain</string>
+    <string name="TicTacToe">Tic Tac Toe</string>
+    <string name="GuessThatNumber">Guess That Number</string>
+    <string name="BrainTeaser">Brain Teaser</string>
+    <string name="TeaseBrain">Tease Your Brain</string>
+</resources>
