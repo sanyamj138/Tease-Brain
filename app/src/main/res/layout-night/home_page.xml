@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backdrop_light"
+    android:background="@drawable/ic_background_design"
     android:layout_height="match_parent"
-    tools:context=".StartPage">
+    tools:context=".HomePage">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/teaseBrain"
@@ -15,7 +15,7 @@
         android:text="@string/TeaseBrain"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:textColor="#AD000000"
+        android:textColor="#ADFFFFFF"
         android:fontFamily="sans-serif-black"
         android:textSize="50sp"
         />
@@ -30,9 +30,9 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/TicTacToe"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="#FFFFFF" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/guessThatNumber"
@@ -46,9 +46,9 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/GuessThatNumber"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="#FFFFFF" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/brainTeaser"
@@ -62,8 +62,8 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/BrainTeaser"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="#FFFFFF" />
 </RelativeLayout>
 
