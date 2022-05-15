@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/backdrop_light"
+    android:background="@drawable/ic_background_design"
     android:layout_height="match_parent"
     tools:context=".StartPage">
 
@@ -17,9 +17,9 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/TicTacToe"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="#FFFFFF" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/guessThatNumber"
@@ -33,8 +33,8 @@
         android:fontFamily="sans-serif-black"
         android:text="@string/GuessThatNumber"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:backgroundTint="@color/black" />
+        app:backgroundTint="#FFFFFF" />
 </RelativeLayout>
 
