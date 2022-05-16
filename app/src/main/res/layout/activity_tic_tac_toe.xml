@@ -7,4 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".TicTacToe">
 
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/tictactoe_day"
+        app:columnCount="3"
+        app:rowCount="3"></androidx.gridlayout.widget.GridLayout>
+
 </RelativeLayout>
