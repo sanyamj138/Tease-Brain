@@ -2,16 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/ic_background_design">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_background_design" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/board"
         android:layout_width="350dp"
         android:layout_height="370dp"
-        android:layout_below="@+id/winnerAnnounce"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
         android:background="@drawable/tictactoe_night"
         app:columnCount="3"
         app:rowCount="3" />
@@ -22,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/StartTicTacToe"
         android:textColor="#D8FFFFFF"
         android:textSize="50sp" />
@@ -30,22 +34,24 @@
         android:id="@+id/winnerAnnounce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/tapToStart"
-        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/CrossWin"
-        android:visibility="invisible"
         android:textColor="#D8FFFFFF"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:visibility="gone" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/playAgain"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#D8FFFFFF"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/board"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#D8FFFFFF"
+        android:fontFamily="sans-serif-black"
         android:text="@string/playAgain" />
 
 

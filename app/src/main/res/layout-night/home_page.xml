@@ -3,22 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/ic_background_design"
     android:layout_height="match_parent"
     tools:context=".HomePage">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_background_design" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/teaseBrain"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/TeaseBrain"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:textColor="#ADFFFFFF"
         android:fontFamily="sans-serif-black"
-        android:textSize="50sp"
-        />
+        android:text="@string/TeaseBrain"
+        android:textAlignment="center"
+        android:textColor="#ADFFFFFF"
+        android:textSize="50sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ticTacToe"
