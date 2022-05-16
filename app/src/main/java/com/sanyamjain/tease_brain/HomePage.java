@@ -14,11 +14,11 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
-        Button ticTacToe, guessThatNumber, teaseBrain;
+        Button ticTacToe, guessThatNumber, brainTeaser;
 
         ticTacToe = findViewById(R.id.ticTacToe);
         guessThatNumber = findViewById(R.id.guessThatNumber);
-        teaseBrain = findViewById(R.id.teaseBrain);
+        brainTeaser = findViewById(R.id.brainTeaser);
 
         ticTacToe.setOnClickListener(new View.OnClickListener(){
             @Override
