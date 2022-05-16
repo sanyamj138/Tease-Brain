@@ -4,4 +4,8 @@
     <string name="GuessThatNumber">Guess That Number</string>
     <string name="BrainTeaser">Brain Teaser</string>
     <string name="TeaseBrain">Tease Your Brain</string>
+    <string name="StartTicTacToe">Tap to Start</string>
+    <string name="CrossWin">Team Cross Win</string>
+    <string name="CircleWin">Team Circle Win</string>
+    <string name="playAgain">Play Again</string>
 </resources>

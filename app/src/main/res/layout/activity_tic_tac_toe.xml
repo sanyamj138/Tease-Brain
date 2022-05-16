@@ -8,12 +8,46 @@
     tools:context=".TicTacToe">
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/board"
         android:layout_width="350dp"
         android:layout_height="370dp"
+        android:layout_below="@+id/winnerAnnounce"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/tictactoe_day"
         app:columnCount="3"
-        app:rowCount="3"></androidx.gridlayout.widget.GridLayout>
+        app:rowCount="3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tapToStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/StartTicTacToe"
+        android:textColor="#D9026EAC"
+        android:textSize="50sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/winnerAnnounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tapToStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/CrossWin"
+        android:textColor="#D9026EAC"
+        android:textSize="30sp"
+        android:visibility="invisible" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playAgain"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#D95EABD7"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playAgain" />
 
 </RelativeLayout>
