@@ -29,10 +29,8 @@
             android:layout_marginTop="10dp"
             android:onClick="tap"
             android:tag="0"
-            android:visibility="invisible"
             app:layout_column="0"
-            app:layout_row="0"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="0" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView1"
@@ -42,10 +40,8 @@
             android:onClick="tap"
             android:layout_marginTop="10dp"
             android:tag="1"
-            android:visibility="invisible"
             app:layout_column="1"
-            app:layout_row="0"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="0" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView2"
@@ -55,10 +51,8 @@
             android:layout_marginTop="10dp"
             android:onClick="tap"
             android:tag="2"
-            android:visibility="invisible"
             app:layout_column="2"
-            app:layout_row="0"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="0" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView3"
@@ -68,10 +62,8 @@
             android:layout_marginTop="20dp"
             android:onClick="tap"
             android:tag="3"
-            android:visibility="invisible"
             app:layout_column="0"
-            app:layout_row="1"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="1" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView4"
@@ -81,10 +73,8 @@
             android:onClick="tap"
             android:layout_marginTop="20dp"
             android:tag="4"
-            android:visibility="invisible"
             app:layout_column="1"
-            app:layout_row="1"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="1" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView5"
@@ -94,10 +84,8 @@
             android:onClick="tap"
             android:layout_marginTop="20dp"
             android:tag="5"
-            android:visibility="invisible"
             app:layout_column="2"
-            app:layout_row="1"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="1" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView6"
@@ -107,10 +95,8 @@
             android:onClick="tap"
             android:layout_marginTop="25dp"
             android:tag="6"
-            android:visibility="invisible"
             app:layout_column="0"
-            app:layout_row="2"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="2" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView7"
@@ -120,10 +106,8 @@
             android:onClick="tap"
             android:layout_marginTop="25dp"
             android:tag="7"
-            android:visibility="invisible"
             app:layout_column="1"
-            app:layout_row="2"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="2" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/imageView8"
@@ -133,10 +117,8 @@
             android:onClick="tap"
             android:layout_marginTop="25dp"
             android:tag="8"
-            android:visibility="invisible"
             app:layout_column="2"
-            app:layout_row="2"
-            app:srcCompat="@drawable/cross" />
+            app:layout_row="2" />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -160,7 +142,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/CrossWin"
-        android:textColor="#D9026EAC"
+        android:textColor="#AD000000"
         android:textSize="30sp"
         android:visibility="gone"/>
 

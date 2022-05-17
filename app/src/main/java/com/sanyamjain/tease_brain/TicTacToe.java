@@ -22,9 +22,9 @@ public class TicTacToe extends AppCompatActivity {
     public void tap(View view) {
 
         Button playAgain = findViewById(R.id.playAgain);
-
         tapToStart = findViewById(R.id.tapToStart);
         tapToStart.setVisibility(View.INVISIBLE);
+
         playAgain.setVisibility(View.VISIBLE);
 
         ImageView counter = (ImageView) view;
