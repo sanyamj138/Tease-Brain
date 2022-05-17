@@ -16,14 +16,13 @@
         android:id="@+id/teaseBrain"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="@string/TeaseBrain"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-        android:textColor="#AD000000"
         android:fontFamily="sans-serif-black"
-        android:textSize="50sp"
-        />
+        android:text="@string/TeaseBrain"
+        android:textAlignment="center"
+        android:textColor="#AD000000"
+        android:textSize="50sp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/ticTacToe"
