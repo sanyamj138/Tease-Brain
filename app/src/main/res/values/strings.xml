@@ -8,4 +8,5 @@
     <string name="CrossWin">Team Cross Win</string>
     <string name="CircleWin">Team Circle Win</string>
     <string name="playAgain">Play Again</string>
+    <string name="guessThatNumberText">Guess a Number Between 1 and 100</string>
 </resources>

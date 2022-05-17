@@ -27,6 +27,14 @@ public class HomePage extends AppCompatActivity {
                 startActivity(ticTacToeIntent);
             }
         });
+
+        guessThatNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent guessThatNumberIntent = new Intent(HomePage.this, GuessThatNumber.class);
+                startActivity(guessThatNumberIntent);
+            }
+        });
     }
 
 }
