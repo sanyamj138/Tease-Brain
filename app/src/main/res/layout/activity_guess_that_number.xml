@@ -31,6 +31,7 @@
         android:layout_width="match_parent"
         android:textColorHint="#AD1F1F1F"
         android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/white"
         android:layout_below="@+id/guessThatNumberTextInfo"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
