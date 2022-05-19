@@ -19,6 +19,8 @@ public class GuessThatNumber extends AppCompatActivity {
     Button exitButton;
     EditText numberGuess;
 
+    // #77004AAD
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +61,8 @@ public class GuessThatNumber extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i("Info", "Exiting");
-                setContentView(R.layout.activity_guess_that_number);
+                Intent GuessThatNumberIntent = new Intent(GuessThatNumber.this, HomePage.class);
+                startActivity(GuessThatNumberIntent);
             }
         });
     }
