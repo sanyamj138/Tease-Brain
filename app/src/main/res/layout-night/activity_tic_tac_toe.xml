@@ -154,6 +154,7 @@
         android:visibility="gone"
         android:onClick="again"
         android:backgroundTint="#ADFFFFFF"
+        android:textSize="15sp"
         android:fontFamily="sans-serif-black"
         android:text="@string/playAgain" />
 

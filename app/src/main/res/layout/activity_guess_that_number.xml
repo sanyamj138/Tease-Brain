@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:textColorHint="#AD1F1F1F"
         android:layout_height="wrap_content"
-        app:boxStrokeColor="@color/white"
+        app:boxStrokeColor="@color/black"
         android:layout_below="@+id/guessThatNumberTextInfo"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
@@ -47,6 +47,7 @@
             android:hint="@string/hintGuessThatNumber"
             android:importantForAutofill="no"
             android:inputType="number"
+            android:textColor="@color/black"
             android:textAlignment="center"
             android:textColorHint="#757575"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />

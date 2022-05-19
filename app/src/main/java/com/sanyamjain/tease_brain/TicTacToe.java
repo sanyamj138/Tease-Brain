@@ -46,6 +46,7 @@ public class TicTacToe extends AppCompatActivity {
             for (int[] position : positions) {
                 if (gameState[position[0]] == gameState[position[1]] && gameState[position[1]] == gameState[position[2]] && gameState[position[0]] != 2) {
 
+                    playAgain.setText("Play Again");
                     String winner = " ";
 
                     gameActive = false;
@@ -54,16 +55,16 @@ public class TicTacToe extends AppCompatActivity {
                     } else {
                         winner = "Team Circle";
                     }
-
                     // button = findViewById(R.id.button);
                     TextView winnerAnnounce = (TextView) findViewById(R.id.winnerAnnounce);
                     // textView = findViewById(R.id.textView);
 
                     winnerAnnounce.setText(String.format("%s Win!", winner));
-
-                    playAgain.setText("Play Again");
                     playAgain.setVisibility(View.VISIBLE);
                     winnerAnnounce.setVisibility(View.VISIBLE);
+                }
+                else {
+                    playAgain.setText("Retry");
                 }
             }
         }
