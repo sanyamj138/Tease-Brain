@@ -1,7 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.flaviofaria.kenburnsview.KenBurnsView
         android:id="@+id/image"
@@ -50,6 +51,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/guessButton"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextID"
@@ -62,6 +65,8 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/exitButton"
         android:layout_width="wrap_content"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/white"
         android:layout_height="wrap_content"
         android:layout_below="@+id/guessButton"
         android:layout_centerHorizontal="true"

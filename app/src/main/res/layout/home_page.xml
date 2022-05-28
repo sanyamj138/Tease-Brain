@@ -46,7 +46,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:background="@drawable/round_button"
-        android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-black"
         android:text="@string/GuessThatNumber"
         android:textAlignment="center"
