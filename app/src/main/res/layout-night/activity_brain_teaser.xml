@@ -12,25 +12,82 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/Timer"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/round_button"
+        android:fontFamily="sans-serif-black"
         android:text="Timer"
+        android:textSize="20sp"
         app:backgroundTint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/Score"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp"
-        android:layout_alignParentRight="true"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif-black"
         android:background="@drawable/round_button"
-        android:text="Timer"
+        android:text="Score"
         app:backgroundTint="@color/white"
         />
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Question"
+        android:textSize="30sp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:columnCount="2"
+        app:rowCount="2">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
 
 </RelativeLayout>

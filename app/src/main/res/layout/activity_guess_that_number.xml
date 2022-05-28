@@ -43,13 +43,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="1"
-            android:fontFamily="sans-serif-black"
             android:hint="@string/hintGuessThatNumber"
             android:importantForAutofill="no"
             android:inputType="number"
             android:textColor="@color/black"
             android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
             android:textColorHint="#757575"
+
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,6 +63,10 @@
         android:layout_below="@+id/editTextID"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="15dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="@color/black"
         android:backgroundTint="#AD1F1F1F"
         android:text="@string/GuessButton"
         android:textColor="@color/white" />
@@ -70,6 +75,10 @@
         android:id="@+id/exitButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/round_button"
+        android:textSize="15dp"
+        app:backgroundTint="@color/black"
         android:layout_below="@+id/guessButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
