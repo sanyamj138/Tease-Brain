@@ -35,6 +35,14 @@ public class HomePage extends AppCompatActivity {
                 startActivity(guessThatNumberIntent);
             }
         });
+
+        brainTeaser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent brainTeaser = new Intent(HomePage.this, Brain_Teaser.class);
+                startActivity(brainTeaser);
+            }
+        });
     }
 
 }

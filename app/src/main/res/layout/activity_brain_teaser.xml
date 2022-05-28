@@ -12,32 +12,36 @@
         android:layout_height="match_parent"
         android:src="@drawable/backdrop_light" />
 
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/Timer"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/round_button"
         android:fontFamily="sans-serif-black"
+        android:padding="20dp"
         android:text="Timer"
-        android:textSize="20sp"
+        android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="30sp"
         app:backgroundTint="@color/black" />
 
-    <com.google.android.material.button.MaterialButton
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/Score"
-        android:layout_width="125dp"
-        android:layout_height="75dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:layout_marginEnd="20dp"
         android:layout_alignParentEnd="true"
         android:fontFamily="sans-serif-black"
         android:background="@drawable/round_button"
         android:text="Score"
-        android:textColor="@color/white"
         app:backgroundTint="@color/black"
         />
 
@@ -45,17 +49,20 @@
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Timer"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-black"
         android:text="Question"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/question"
+        android:layout_marginTop="30dp"
         app:columnCount="2"
         app:rowCount="2">
 
@@ -64,7 +71,16 @@
             android:id="@+id/option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="25sp"
+            android:paddingTop="25sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="25sp"
+            android:text="Option 1"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FDB4AD"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -72,7 +88,17 @@
             android:id="@+id/option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="22dp"
+            android:paddingLeft="25sp"
+            android:paddingTop="25sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="25sp"
+            android:text="Option 2"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FDB4AD"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -80,7 +106,17 @@
             android:id="@+id/option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="25sp"
+            android:paddingTop="25sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="25sp"
+            android:text="Option 3"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FDB4AD"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -88,10 +124,49 @@
             android:id="@+id/option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="22dp"
+            android:paddingLeft="25sp"
+            android:paddingTop="25sp"
+            android:paddingRight="25sp"
+            android:paddingBottom="25sp"
+            android:text="Option 4"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:backgroundTint="#FDB4AD"
             app:layout_column="1"
             app:layout_row="1" />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Answer"
+        android:textSize="50sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Play Again"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black" />
 
 </RelativeLayout>

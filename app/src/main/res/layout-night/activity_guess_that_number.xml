@@ -56,12 +56,12 @@
         android:layout_below="@+id/editTextID"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:fontFamily="sans-serif-black"
         android:background="@drawable/round_button"
         android:backgroundTint="#ADFFFFFF"
-        android:textSize="15dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/GuessButton"
         android:textColor="@color/black"
+        android:textSize="15dp"
         app:backgroundTint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
