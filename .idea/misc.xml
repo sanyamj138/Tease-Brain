@@ -7,11 +7,13 @@
         <entry key="app/src/main/res/drawable/ic_light_background_deisgn.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/round_button.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/round_button_day.xml" value="0.186" />
+        <entry key="app/src/main/res/layout-night/activity_brain_teaser.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout-night/activity_guess_that_number.xml" value="0.26510416666666664" />
         <entry key="app/src/main/res/layout-night/activity_launch_screen.xml" value="0.26510416666666664" />
         <entry key="app/src/main/res/layout-night/activity_tic_tac_toe.xml" value="0.2609805924412666" />
         <entry key="app/src/main/res/layout-night/home_page.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout-night/start_page.xml" value="0.26510416666666664" />
+        <entry key="app/src/main/res/layout/activity_brain_teaser.xml" value="0.246875" />
         <entry key="app/src/main/res/layout/activity_guess_that_number.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.24947916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.246875" />
