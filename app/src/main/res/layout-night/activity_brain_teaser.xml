@@ -43,7 +43,7 @@
         app:backgroundTint="@color/white" />
 
     <com.google.android.material.textfield.MaterialAutoCompleteTextView
-        android:id="@+id/question"
+        android:id="@+id/Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Timer"
@@ -56,15 +56,15 @@
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/question"
         android:layout_marginTop="30dp"
         app:columnCount="2"
         app:rowCount="2">
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option1"
+            android:id="@+id/Option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
@@ -75,31 +75,31 @@
             android:paddingBottom="25sp"
             android:text="Option 1"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="18sp"
             app:backgroundTint="#F23E2C"
             app:layout_column="0"
             app:layout_row="0" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option2"
+            android:id="@+id/Option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
-            android:layout_marginLeft="22dp"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
             android:paddingBottom="25sp"
             android:text="Option 2"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="18sp"
             app:backgroundTint="#F23E2C"
             app:layout_column="1"
             app:layout_row="0" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option3"
+            android:id="@+id/Option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -111,26 +111,26 @@
             android:paddingBottom="25sp"
             android:text="Option 3"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="18sp"
             app:backgroundTint="#F23E2C"
             app:layout_column="0"
             app:layout_row="1" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option4"
+            android:id="@+id/Option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
-            android:layout_marginLeft="22dp"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
             android:paddingBottom="25sp"
             android:text="Option 4"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="18sp"
             app:backgroundTint="#F23E2C"
             app:layout_column="1"
             app:layout_row="1" />
@@ -138,10 +138,10 @@
     </androidx.gridlayout.widget.GridLayout>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/answer"
+        android:id="@+id/Correct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/question"
+        android:layout_below="@id/Question"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="275dp"
         android:fontFamily="sans-serif-black"
@@ -149,16 +149,16 @@
         android:textSize="50sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/playAgain"
+        android:id="@+id/PlayAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/answer"
+        android:layout_below="@+id/Correct"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="@drawable/round_button"
-        android:onClick="start"
         android:fontFamily="sans-serif-black"
         android:padding="20dp"
+        android:onClick="playAgain"
         android:text="Play Again"
         android:textAlignment="center"
         android:textColor="@color/black"
