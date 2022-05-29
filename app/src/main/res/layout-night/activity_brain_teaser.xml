@@ -54,6 +54,7 @@
         android:textSize="40sp" />
 
     <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/constraintChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Question"
@@ -165,6 +166,22 @@
         android:textSize="20sp"
         app:backgroundTint="@color/white" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Start"
+        android:background="@drawable/round_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="200sp"
+        android:layout_below="@+id/Question"
+        android:textAlignment="center"
+        android:onClick="start"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:visibility="gone"
+        android:textSize="80sp"
+        app:backgroundTint="#F23E2C"
+        android:text="Start" />
 
 
 </RelativeLayout>

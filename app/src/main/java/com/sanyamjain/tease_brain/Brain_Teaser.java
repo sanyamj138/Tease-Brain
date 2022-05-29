@@ -14,6 +14,7 @@ import java.util.Random;
 
 public class Brain_Teaser extends AppCompatActivity {
 
+    Button Start;
     ArrayList<Integer> Answers = new ArrayList<Integer>();
     TextView Correct;
     TextView Score;
@@ -24,10 +25,18 @@ public class Brain_Teaser extends AppCompatActivity {
     TextView Question;
     TextView Timer;
     Button PlayAgain;
+    ConstraintLayout constraintChange;
 
     int locationCorrect;
     int points = 0;
     int numberOfQuestions = 0;
+
+    public void start(View view)
+    {
+        Start.setVisibility(View.INVISIBLE);
+        playAgain(findViewById(R.id.Timer));
+        constraintChange.setVisibility(View.VISIBLE);
+    }
 
     public void newQuestion()
     {
@@ -112,7 +121,12 @@ public class Brain_Teaser extends AppCompatActivity {
         Option3 = findViewById(R.id.Option3);
         Question = findViewById(R.id.Question);
         Timer = findViewById(R.id.Timer);
+        Start = findViewById(R.id.Start);
+        constraintChange = findViewById(R.id.constraintChange);
         PlayAgain = findViewById(R.id.PlayAgain);
 
+
+        Start.setVisibility(View.VISIBLE);
+        constraintChange.setVisibility(View.INVISIBLE);
     }
 }
