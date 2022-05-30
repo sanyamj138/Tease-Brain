@@ -23,7 +23,6 @@
         android:fontFamily="sans-serif-black"
         android:padding="20dp"
         android:text="Timer"
-        android:onClick="playAgain"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
@@ -47,7 +46,7 @@
         />
 
     <com.google.android.material.textfield.MaterialAutoCompleteTextView
-        android:id="@+id/question"
+        android:id="@+id/Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Timer"
@@ -61,19 +60,20 @@
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/question"
+        android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:columnCount="2"
         app:rowCount="2">
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option1"
+            android:id="@+id/Option1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -86,12 +86,13 @@
             app:layout_row="0" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option2"
+            android:id="@+id/Option2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="22dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -104,12 +105,13 @@
             app:layout_row="0" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option3"
+            android:id="@+id/Option3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -122,9 +124,10 @@
             app:layout_row="1" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/option4"
+            android:id="@+id/Option4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="answer"
             android:layout_marginLeft="22dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button"
@@ -142,32 +145,34 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/question"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="275dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Answer"
-        android:textSize="50sp" />
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Answer"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/Question"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="275dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="Answer"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="50sp" />-->
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/playAgain"
+        android:id="@+id/PlayAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/answer"
+        android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="300dp"
         android:background="@drawable/round_button"
         android:fontFamily="sans-serif-black"
         android:padding="20dp"
         android:text="Play Again"
+        android:onClick="playGame"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:backgroundTint="@color/black" />
+
 
 </RelativeLayout>

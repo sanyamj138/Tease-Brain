@@ -39,8 +39,8 @@ public class HomePage extends AppCompatActivity {
         brainTeaser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent brainTeaser = new Intent(HomePage.this, Brain_Teaser.class);
-                startActivity(brainTeaser);
+                Intent brainTeaserIntent = new Intent(HomePage.this, Brain_Teaser.class);
+                startActivity(brainTeaserIntent);
             }
         });
     }

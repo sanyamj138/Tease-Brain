@@ -2,6 +2,7 @@ package com.sanyamjain.tease_brain;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.gridlayout.widget.GridLayout;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,28 +15,58 @@ import java.util.Random;
 
 public class Brain_Teaser extends AppCompatActivity {
 
-    Button Start;
-    ArrayList<Integer> Answers = new ArrayList<Integer>();
-    TextView Correct;
+    ArrayList<Integer> answers = new ArrayList<Integer>();
+//    TextView Correct;
     TextView Score;
-    Button Option4;
     Button Option1;
     Button Option2;
     Button Option3;
+    Button Option4;
     TextView Question;
     TextView Timer;
     Button PlayAgain;
-    ConstraintLayout constraintChange;
 
     int locationCorrect;
     int points = 0;
     int numberOfQuestions = 0;
 
-    public void start(View view)
+    public void playGame(View view)
     {
-        Start.setVisibility(View.INVISIBLE);
-        playAgain(findViewById(R.id.Timer));
-        constraintChange.setVisibility(View.VISIBLE);
+        points = 0;
+        numberOfQuestions = 0;
+        Timer.setText("30s");
+        Score.setText(Integer.toString(points) + "/" + Integer.toString(numberOfQuestions));
+        newQuestion();
+        PlayAgain.setVisibility(View.INVISIBLE);
+        // Correct.setText("");
+
+        new CountDownTimer(30100, 1000) {
+            @Override
+            public void onTick(long l) {
+                Timer.setText(String.valueOf((l / 1000) + "s"));
+            }
+
+            @Override
+            public void onFinish() {
+                // Correct.setText("Done!");
+                PlayAgain.setVisibility(View.VISIBLE);
+            }
+        }.start();
+    }
+
+    public void answer(View view)
+    {
+//        if(Integer.toString(locationCorrect).equals(view.getTag().toString())) {
+//            // Correct.setText("Correct!");
+//            points++;
+//        }
+//        else {
+//             Correct.setText("Wrong!");
+//        }
+
+        numberOfQuestions++;
+         Score.setText(Integer.toString(points) + "/" + Integer.toString(numberOfQuestions));
+        newQuestion();
     }
 
     public void newQuestion()
@@ -49,63 +80,25 @@ public class Brain_Teaser extends AppCompatActivity {
 
         locationCorrect = random.nextInt(4);
 
-        Answers.clear();
+        answers.clear();
 
         for(int i = 0; i < 4; i++)
         {
             if(i == locationCorrect) {
-                Answers.add(a+b);
+                answers.add(a+b);
             } else {
                 int wrongAnswer = random.nextInt(99);
                 while (wrongAnswer == a + b) {
                     wrongAnswer = random.nextInt(99);
                 }
-                Answers.add(wrongAnswer);
+                answers.add(wrongAnswer);
             }
         }
 
-        Option1.setText(Integer.toString(Answers.get(0)));
-        Option2.setText(Integer.toString(Answers.get(1)));
-        Option3.setText(Integer.toString(Answers.get(2)));
-        Option4.setText(Integer.toString(Answers.get(3)));
-    }
-
-    public void playAgain(View view)
-    {
-        points = 0;
-        numberOfQuestions = 0;
-        Timer.setText("30s");
-        Score.setText(Integer.toString(points) + "/" + Integer.toString(numberOfQuestions));
-        newQuestion();
-        PlayAgain.setVisibility(View.INVISIBLE);
-        Correct.setText("");
-
-        new CountDownTimer(30100, 1000) {
-            @Override
-            public void onTick(long l) {
-                Timer.setText(String.valueOf((l / 1000) + "s"));
-            }
-
-            @Override
-            public void onFinish() {
-                Correct.setText("Done!");
-                PlayAgain.setVisibility(View.VISIBLE);
-            }
-        }.start();
-    }
-
-    public void answer(View view)
-    {
-        if(Integer.toString(locationCorrect).equals(view.getTag().toString())) {
-            Correct.setText("Correct!");
-            points++;
-        }
-        else {
-            Correct.setText("Wrong!");
-        }
-        numberOfQuestions++;
-        Score.setText(Integer.toString(points) + "/" + Integer.toString(numberOfQuestions));
-        newQuestion();
+        Option1.setText(Integer.toString(answers.get(0)));
+        Option2.setText(Integer.toString(answers.get(1)));
+        Option3.setText(Integer.toString(answers.get(2)));
+        Option4.setText(Integer.toString(answers.get(3)));
     }
 
     @Override
@@ -113,20 +106,17 @@ public class Brain_Teaser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_brain_teaser);
 
-        Correct = findViewById(R.id.Correct);
-        Score = findViewById(R.id.Score);
-        Option4 = findViewById(R.id.Option4);
+        Question = findViewById(R.id.Question);
         Option1 = findViewById(R.id.Option1);
         Option2 = findViewById(R.id.Option2);
         Option3 = findViewById(R.id.Option3);
-        Question = findViewById(R.id.Question);
+        Option4 = findViewById(R.id.Option4);
+//        Correct = findViewById(R.id.Correct);
+        Score = findViewById(R.id.Score);
         Timer = findViewById(R.id.Timer);
-        Start = findViewById(R.id.Start);
-        constraintChange = findViewById(R.id.constraintChange);
         PlayAgain = findViewById(R.id.PlayAgain);
 
-
-        Start.setVisibility(View.VISIBLE);
-        constraintChange.setVisibility(View.INVISIBLE);
+        playGame(findViewById(R.id.Timer));
     }
+
 }

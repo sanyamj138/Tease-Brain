@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         app:columnCount="2"
         app:rowCount="2">
 
@@ -70,6 +70,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -88,6 +89,7 @@
             android:layout_marginLeft="22dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -106,6 +108,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/round_button"
             android:fontFamily="sans-serif-black"
+            android:onClick="answer"
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
@@ -128,6 +131,7 @@
             android:paddingLeft="25sp"
             android:paddingTop="25sp"
             android:paddingRight="25sp"
+            android:onClick="answer"
             android:paddingBottom="25sp"
             android:text="Option 4"
             android:textColor="@color/white"
@@ -138,50 +142,33 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/Correct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/Question"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="275dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Answer"
-        android:textSize="50sp" />
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Correct"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/Question"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="275dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="Answer"-->
+<!--        android:textSize="50sp" />-->
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/PlayAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Correct"
+        android:layout_below="@+id/Question"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="300dp"
         android:background="@drawable/round_button"
         android:fontFamily="sans-serif-black"
+        android:onClick="playGame"
         android:padding="20dp"
-        android:onClick="playAgain"
         android:text="Play Again"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:backgroundTint="@color/white" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/Start"
-        android:background="@drawable/round_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="200sp"
-        android:layout_below="@+id/Question"
-        android:textAlignment="center"
-        android:onClick="start"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-black"
-        android:visibility="gone"
-        android:textSize="80sp"
-        app:backgroundTint="#F23E2C"
-        android:text="Start" />
 
 
 </RelativeLayout>
